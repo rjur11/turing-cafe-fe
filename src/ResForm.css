@@ -1,0 +1,14 @@
+.input-box {
+  margin: 20px;
+  padding: 5px;
+}
+.form-deets {
+  margin: 5px;
+}
+.res-button {
+  background: teal;
+  color: white;
+  padding: 10px;
+  border: 0.5px solid white;
+  width: 200px;
+}
