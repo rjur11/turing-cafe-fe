@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { getAllReservations } from "./apiCalls";
+import { getAllReservations, deleteRes } from "./apiCalls";
 import ResContainer from "../ResContainer";
 import ResForm from "../ResForm";
 
@@ -23,7 +23,7 @@ class App extends Component {
   };
 
   deleteRes = (id) => {
-    console.log(id);
+    deleteRes(id);
     const updatedReservations = this.state.reservations.filter(
       (reservation) => reservation.id !== id
     );

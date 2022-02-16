@@ -24,4 +24,13 @@ const addNewRes = (name, date, time, number) => {
     .catch((error) => console.log(error));
 };
 
-export { getAllReservations, addNewRes };
+const deleteRes = (id) => {
+  return fetch(`http://localhost:3001/api/v1/reservations/${id}`, {
+    method: "DELETE",
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
+};
+
+export { getAllReservations, addNewRes, deleteRes };
