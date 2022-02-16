@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className='app-title'>Turing Cafe Reservations</h1>
-        <div className='resy-form'>
-
+        <h1 className="app-title">Turing Cafe Reservations</h1>
+        <div className="resy-form">
+          <p>Hi</p>
         </div>
-        <div className='resy-container'>
-          
-        </div>
+        <div className="resy-container"></div>
       </div>
-    )
+    );
   }
 }
 
